@@ -12,3 +12,10 @@
 .cards-title {
   color: #fafaf8;
 }
+img {
+  width: 250px;
+}
+img:hover{
+  opacity: .7;
+  box-shadow: 2px 2px 1px #fafaf8;
+}
