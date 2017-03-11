@@ -1,0 +1,14 @@
+.parent-flex {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+}
+
+.child-flex {
+  margin: auto;
+  width: 200px;
+  height: auto;
+}
+.cards-title {
+  color: #fafaf8;
+}
