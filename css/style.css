@@ -6,16 +6,16 @@
 
 .child-flex {
   margin: auto;
-  width: 200px;
+  width: 250px;
   height: auto;
 }
-.cards-title {
-  color: #fafaf8;
-}
+
 img {
   width: 250px;
+  height: auto;
 }
+
 img:hover{
   opacity: .7;
-  box-shadow: 2px 2px 1px #fafaf8;
+  box-shadow: 4px 4px 2px #000000;
 }

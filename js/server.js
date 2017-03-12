@@ -1,20 +1,14 @@
-console.log("Hello from server.js");
+var express = require('express');
+var app = express();
 
+app.get('/', function (req, res) {
+   console.log("Got a GET request for the homepage");
+   res.send('Hello GET');
+})
 
-var api_path = 'http://ufc-data-api.ufc.com/api/v1/us/fighters';
+var server = app.listen(8081, function () {
+   var host = server.address().address
+   var port = server.address().port
 
-function setup() {
-	loadJSON(api_path, gotData, 'jsonp');
-}
-
-function gotData (data) {
-	console.log(data);
-    // mmaData = data;
-}
-
-function action() {
-  if (mmaData) {
-    console.log(mmaData.main.first_name);
-    console.log(mmaData.main.last_name);
-  }
-}
+   console.log("Example app listening at http://%s:%s", host, port)
+})
